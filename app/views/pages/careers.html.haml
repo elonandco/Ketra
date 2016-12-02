@@ -1,0 +1,163 @@
+= content_for :head do
+  = javascript_include_tag "careers"
+  = stylesheet_link_tag 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
+
+.body.careers
+  .row
+    .title-container
+      .title Careers
+  .row.margin.margin-bottom.home-desc
+    %img.main.img-1-1{src:"/assets/careers1.jpg"}
+  .row
+    .careers-container
+      %h2.subtitle-1 Values
+      .col-1-2.arial
+        Ketra is a place where boring goes to die. We’re taking a stagnant industry and changing everything about it for the better; taking it all apart and starting from scratch. Is it easy? No. But somebody has to do it.
+        %br
+        %br
+        And part of what makes us ‘Ketran’ is an unwillingness to settle for the status quo. We think mediocrity sucks, and we do absolutely everything in our power to upgrade, enhance and perfect everything we touch. We want to change the way people see things, literally and figuratively. We want to change the way people feel on a daily basis. We want to change the world — and we’re probably
+        going to do it.
+        %br
+        %br
+        Goals this big require people who don’t recognize or care about limitations. People who are willing to do more, do
+        it faster, and do it better. People who have a passion for being the best. People who don’t stop until it’s right.
+      .col-1-2.arial
+        Ketra engineers are badasses who thrive in an environment where brisk thought and swift action are the only possible options. They attack technical challenges with gusto, and constantly raise the bar for each other and the entire industry. Ketra engineers are changing the landscape of the lighting world, every single day.
+        %br
+        %br
+        With a small team made up of only the creme de la creme, every person at Ketra has a huge impact. Multiple disciplines come together to form a dream team of talent, and we pour our passion into our shared, huge, ultra-important goals.
+        %br
+        %br
+        We aren’t stopping until we win. Are you coming with us?
+  .row
+    .careers-container
+      %h2.subtitle-1 Awards / Patents
+    .awards-patent-container
+      .prev
+        %a.prev-holder{href: '#'}
+          %i.fa.fa-chevron-left
+      .carousel
+        #awards-pat
+          .item
+            %img.carousel-img{src:"/assets/rock-background.jpeg"}
+          .item
+            %img.carousel-img{src:"/assets/sunset-grass.jpeg"}
+          .item
+            %img.carousel-img{src:"/assets/rock-background.jpeg"}
+          .item
+            %img.carousel-img{src:"/assets/sunset-grass.jpeg"}
+          .item
+            %img.carousel-img{src:"/assets/rock-background.jpeg"}
+          .item
+            %img.carousel-img{src:"/assets/sunset-grass.jpeg"}
+          .item
+            %img.carousel-img{src:"/assets/rock-background.jpeg"}
+          .item
+            %img.carousel-img{src:"/assets/sunset-grass.jpeg"}
+
+      .next
+        %a.next-holder{href: '#'}
+          %i.fa.fa-chevron-right
+  .row
+    .current-openings-container
+      %h2.subtitle-1 Current Openings:
+      .row.career-category-container
+        .col-1-2
+          .accordion-img-container.arial
+            %img.main.img-1-1.accordion-img{src:"/assets/rock-background.jpeg"}
+            .accordion.arial
+              .accordion-icon
+                %i.fa.fa-chevron-right
+                SALES
+        .col-1-2
+          .accordion-img-container.arial
+            %img.main.img-1-1.accordion-img{src:"/assets/rock-background.jpeg"}
+            .accordion.arial
+              .accordion-icon
+                %i.fa.fa-chevron-right
+                ENGINEERING
+      .row.career-category-container
+        .row.career-category.sales
+          .col-1-2
+            .accordion-item.arial
+              %p Sales Job Title
+              %p Sales Job Title
+              %p Sales Job Title
+          .col-1-2
+            .accordion-item.arial
+              &nbsp;
+        .row.career-category.engineering
+          .col-1-2
+            .accordion-item.arial
+              &nbsp;
+          .col-1-2
+            .accordion-item.arial
+              %p Engineering Job Title
+              %p Engineering Job Title
+              %p Engineering Job Title
+      .row.career-category-container
+        .col-1-2
+          .accordion-img-container.arial
+            %img.main.img-1-1.accordion-img{src:"/assets/rock-background.jpeg"}
+            .accordion.arial
+              .accordion-icon
+                %i.fa.fa-chevron-right
+                MARKETING
+        .col-1-2
+          .accordion-img-container.arial
+            %img.main.img-1-1.accordion-img{src:"/assets/rock-background.jpeg"}
+            .accordion.arial
+              .accordion-icon
+                %i.fa.fa-chevron-right
+                OPERATIONS
+      .row.career-category.marketing
+        .col-1-2
+          .accordion-item.arial
+            %p Marketing Job Title
+            %p Marketing Job Title
+            %p Marketing Job Title
+        .col-1-2
+          .accordion-item.arial
+            &nbsp;
+      .row.career-category.operations
+        .col-1-2
+          .accordion-item.arial
+            &nbsp;
+        .col-1-2
+          .accordion-item.arial
+            %p Operations Job Title
+            %p Operations Job Title
+            %p Operations Job Title
+      .row.career-category-container
+        .col-1-2
+          .accordion-img-container.arial
+            %img.main.img-1-1.accordion-img{src:"/assets/rock-background.jpeg"}
+            .accordion.arial
+              .accordion-icon
+                %i.fa.fa-chevron-right
+                FINANCE / ADMINISTRATION
+        .col-1-2
+          .accordion-img-container.arial
+            %img.main.img-1-1.accordion-img{src:"/assets/rock-background.jpeg"}
+            .accordion.arial
+              .accordion-icon
+                %i.fa.fa-chevron-right
+                SOLUTIONS AND SERVICES
+      .row.career-category.financeadministration
+        .col-1-2
+          .accordion-item.arial
+            %p Finance Job Title
+            %p Administration Job Title
+            %p Finance Job Title
+        .col-1-2
+          .accordion-item.arial
+            &nbsp;
+      .row.career-category.solutionsandservices
+        .col-1-2
+          .accordion-item.arial
+            &nbsp;
+        .col-1-2
+          .accordion-item.arial
+            %p Solution Job Title
+            %p Solution Job Title
+            %p Services Job Title

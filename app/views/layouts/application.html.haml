@@ -1,0 +1,29 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title KetraWeb
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = javascript_include_tag "pages"
+    = csrf_meta_tags
+    %meta{:content => "text/html; charset=UTF-8", :name => "Content-Type"}
+    - url = request.protocol + request.env["HTTP_HOST"]
+    - title = 'Ketra'
+    - site_name = url
+    - description = 'Lorem Ipsum Ketra Website is the website for you.'
+    - image = url + '/assets/project-space-image-3.jpeg'
+
+    %meta{:property=>"og:title", :content=>"#{title}"}
+    %meta{:property=>"og:site_name", :content=>"#{site_name}"}
+    %meta{:property=>"og:description", :content=>"#{description}"}
+    %meta{:property=>"og:image", :content=>"#{image}"}
+    %meta{:property=>"og:rating", :content=>"General"}
+    %meta{:property=>"og:medium", :content=>"Blog"}
+    %meta{:property=>"og:language", :content=>"ES"}
+
+    = yield(:head)
+  %body
+    = render 'layouts/default_header'
+    = yield
+    = render 'layouts/default_footer'

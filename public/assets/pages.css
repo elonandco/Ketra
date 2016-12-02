@@ -1,0 +1,1462 @@
+@font-face {
+  font-family: azosans;
+  src: url("azosans-light.otf");
+  src: local("azosans"), url("azosans-light.otf") format("opentype");
+}
+@font-face {
+  font-family: azosans_bold;
+  src: url("azosans-bold.otf");
+  src: local("azosans_bold"), url("azosans-bold.otf") format("opentype");
+}
+/* line 14, ../../app/assets/stylesheets/pages.css.scss */
+body {
+  float: left;
+  width: 100%;
+}
+
+/* line 18, ../../app/assets/stylesheets/pages.css.scss */
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 22, ../../app/assets/stylesheets/pages.css.scss */
+a:hover {
+  color: #7e7e7e;
+}
+
+/* line 25, ../../app/assets/stylesheets/pages.css.scss */
+.arial {
+  font-family: azosans;
+}
+
+/* line 28, ../../app/assets/stylesheets/pages.css.scss */
+.arial.bold, .arial .bold {
+  font-family: azosans_bold;
+}
+
+/* line 31, ../../app/assets/stylesheets/pages.css.scss */
+.font-grey {
+  color: #7e7e7e;
+}
+
+/* line 34, ../../app/assets/stylesheets/pages.css.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 37, ../../app/assets/stylesheets/pages.css.scss */
+.text-align-center {
+  text-align: center;
+}
+
+/* line 40, ../../app/assets/stylesheets/pages.css.scss */
+.img-1-1 {
+  width: 100%;
+}
+
+/* line 43, ../../app/assets/stylesheets/pages.css.scss */
+.img-1-2 {
+  width: 50%;
+}
+
+/* line 46, ../../app/assets/stylesheets/pages.css.scss */
+.img-1-4 {
+  width: 25%;
+}
+
+/* line 49, ../../app/assets/stylesheets/pages.css.scss */
+.img-3-4 {
+  width: 75%;
+}
+
+/* line 52, ../../app/assets/stylesheets/pages.css.scss */
+.header {
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+}
+/* line 56, ../../app/assets/stylesheets/pages.css.scss */
+.header .title {
+  float: left;
+  font-size: 40px;
+  margin: 0 0 0 80px;
+  letter-spacing: 15px;
+}
+/* line 62, ../../app/assets/stylesheets/pages.css.scss */
+.header .search {
+  float: right;
+  margin: 0 20px 0 0;
+  padding: 13px;
+}
+/* line 66, ../../app/assets/stylesheets/pages.css.scss */
+.header .search input {
+  float: left;
+  background: none;
+  border: 0px;
+  font-size: 19px;
+}
+/* line 72, ../../app/assets/stylesheets/pages.css.scss */
+.header .search img {
+  float: left;
+  width: 23px;
+  margin-right: 10px;
+}
+/* line 78, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container {
+  float: right;
+}
+/* line 80, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container .menu-button {
+  margin: 0 80px 0 0;
+  width: 50px;
+  cursor: pointer;
+}
+/* line 85, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container .menu-hover {
+  position: absolute;
+  margin: -55px 0 0 -150px;
+  display: none;
+  z-index: 10000;
+}
+/* line 91, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container .menu-hover .menu-hover-container {
+  background: #7e7e7e;
+  float: left;
+  width: 200px;
+}
+/* line 95, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container .menu-hover .menu-hover-container .x-button {
+  float: right;
+  width: 23px;
+  margin: 10px;
+  cursor: pointer;
+}
+/* line 101, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container .menu-hover .menu-hover-container .page-container {
+  margin: 40px 0 20px 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+/* line 105, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container .menu-hover .menu-hover-container .page-container .page {
+  margin-top: 10px;
+  font-size: 19px;
+  cursor: pointer;
+}
+/* line 109, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container .menu-hover .menu-hover-container .page-container .page a {
+  color: white;
+}
+/* line 111, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container .menu-hover .menu-hover-container .page-container .page a:hover {
+  color: white;
+}
+/* line 116, ../../app/assets/stylesheets/pages.css.scss */
+.header .menu-container .menu-hover .menu-hover-container .page-container .sub-page {
+  margin: 6px 0 0 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* line 126, ../../app/assets/stylesheets/pages.css.scss */
+.body {
+  float: none;
+  max-width: 1024px;
+  margin: 0 auto;
+  margin-top: 8VW;
+}
+/* line 131, ../../app/assets/stylesheets/pages.css.scss */
+.body .row {
+  float: left;
+  width: 100%;
+}
+/* line 135, ../../app/assets/stylesheets/pages.css.scss */
+.body .light-grey {
+  background-color: #d3d3d3;
+}
+/* line 138, ../../app/assets/stylesheets/pages.css.scss */
+.body .margin {
+  margin: 20px 0;
+}
+/* line 141, ../../app/assets/stylesheets/pages.css.scss */
+.body .margin-bottom {
+  margin: 0 0 20px 0;
+}
+/* line 144, ../../app/assets/stylesheets/pages.css.scss */
+.body .title-container {
+  position: absolute;
+  margin: 100px 0 0 80px;
+  background: #ffffff;
+  z-index: 20;
+  width: 500px;
+}
+/* line 150, ../../app/assets/stylesheets/pages.css.scss */
+.body .title-container .title {
+  margin-top: 20px;
+  font-size: 40px;
+}
+/* line 154, ../../app/assets/stylesheets/pages.css.scss */
+.body .title-container .desc {
+  margin: 20px 0;
+  line-height: 25px;
+}
+/* line 159, ../../app/assets/stylesheets/pages.css.scss */
+.body .background-image {
+  width: 70%;
+  float: right;
+}
+/* line 163, ../../app/assets/stylesheets/pages.css.scss */
+.body .system {
+  padding: 50px 0;
+  margin-top: -5px;
+}
+/* line 166, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .title {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+/* line 173, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .system-options {
+  width: 70%;
+  margin: 90px auto 0;
+}
+/* line 176, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .system-options .option {
+  width: 25%;
+  text-align: center;
+  float: left;
+}
+/* line 180, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .system-options .option img {
+  height: 70px;
+}
+/* line 184, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .system-options .option-border {
+  margin: 15px auto 0;
+  width: 60%;
+  border-top: 1px solid;
+}
+/* line 189, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .system-options .option-text {
+  margin: 0 auto;
+  font-size: 13px;
+  padding-top: 10px;
+}
+/* line 195, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .desc {
+  margin-top: 45px;
+  float: left;
+  text-align: center;
+  width: 100%;
+  line-height: 15px;
+  word-spacing: 3px;
+}
+/* line 203, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .system-more {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+/* line 207, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .system-more .button {
+  float: left;
+  margin: 50px 0 0 45%;
+  border: 1px solid;
+  padding: 3px 19px;
+  cursor: pointer;
+}
+/* line 213, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .system-more .button p {
+  float: left;
+  font-size: 13px;
+}
+/* line 217, ../../app/assets/stylesheets/pages.css.scss */
+.body .system .system-more .button img {
+  float: left;
+  width: 35px;
+  margin: 3px 0 0 10px;
+}
+/* line 226, ../../app/assets/stylesheets/pages.css.scss */
+.body .home-desc iframe {
+  float: left;
+  width: 100%;
+  height: 37VW;
+}
+/* line 231, ../../app/assets/stylesheets/pages.css.scss */
+.body .home-desc img.main {
+  float: left;
+}
+/* line 234, ../../app/assets/stylesheets/pages.css.scss */
+.body .home-desc .home-desc-container {
+  float: left;
+  margin: 50px 0 0;
+}
+/* line 237, ../../app/assets/stylesheets/pages.css.scss */
+.body .home-desc .home-desc-container .title {
+  text-align: left;
+  font-size: 1VW;
+  margin: 0 0 0 1VW;
+  line-height: 1vW;
+}
+/* line 243, ../../app/assets/stylesheets/pages.css.scss */
+.body .home-desc .home-desc-container .desc {
+  margin: 4VW 1VW 0;
+  text-align: left;
+  word-spacing: 3px;
+  font-size: 1VW;
+  line-height: 2VW;
+}
+/* line 252, ../../app/assets/stylesheets/pages.css.scss */
+.body .learn-more-container {
+  float: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+/* line 256, ../../app/assets/stylesheets/pages.css.scss */
+.body .learn-more-container .button {
+  float: left;
+  margin: 50px 0 0 40%;
+  border: 1px solid;
+  padding: 3px 19px;
+  cursor: pointer;
+}
+/* line 262, ../../app/assets/stylesheets/pages.css.scss */
+.body .learn-more-container .button p {
+  float: left;
+  font-size: 16px;
+}
+/* line 266, ../../app/assets/stylesheets/pages.css.scss */
+.body .learn-more-container .button img {
+  float: left;
+  width: 41px;
+  margin: 3px 0 0 10px;
+}
+
+/* line 274, ../../app/assets/stylesheets/pages.css.scss */
+.footer {
+  float: left;
+  width: 100%;
+}
+/* line 277, ../../app/assets/stylesheets/pages.css.scss */
+.footer .pages {
+  float: left;
+  width: 28%;
+  padding-bottom: 30px;
+  border-top: 3px solid #d3d3d3;
+  border-right: 1px solid;
+}
+/* line 283, ../../app/assets/stylesheets/pages.css.scss */
+.footer .pages .title {
+  margin-top: 30px;
+  float: left;
+  width: 50%;
+  font-size: 17px;
+  letter-spacing: 3px;
+}
+/* line 289, ../../app/assets/stylesheets/pages.css.scss */
+.footer .pages .title p {
+  float: left;
+  margin: 0 0 0 50px;
+  cursor: pointer;
+}
+/* line 296, ../../app/assets/stylesheets/pages.css.scss */
+.footer .contacts {
+  float: left;
+  border-top: 3px solid #d3d3d3;
+  width: 71.8%;
+}
+/* line 300, ../../app/assets/stylesheets/pages.css.scss */
+.footer .contacts .contact-container {
+  float: left;
+}
+/* line 302, ../../app/assets/stylesheets/pages.css.scss */
+.footer .contacts .contact-container .text {
+  margin: 5px 0 0 52px;
+  font-size: 15px;
+}
+/* line 306, ../../app/assets/stylesheets/pages.css.scss */
+.footer .contacts .contact-container .title {
+  margin-top: 28px;
+}
+/* line 310, ../../app/assets/stylesheets/pages.css.scss */
+.footer .contacts .social {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 313, ../../app/assets/stylesheets/pages.css.scss */
+.footer .contacts .social img {
+  margin: 27px 15px 0 0;
+  float: left;
+  width: 10%;
+  cursor: pointer;
+}
+/* line 320, ../../app/assets/stylesheets/pages.css.scss */
+.footer .contacts .cont-40 {
+  width: 40%;
+}
+/* line 323, ../../app/assets/stylesheets/pages.css.scss */
+.footer .contacts .cont-20 {
+  width: 20%;
+}
+
+/* line 329, ../../app/assets/stylesheets/pages.css.scss */
+.products .title-container {
+  float: left;
+  position: relative;
+  margin: 70px 0 50px 80px;
+}
+/* line 334, ../../app/assets/stylesheets/pages.css.scss */
+.products .product-category {
+  margin: 0 4VW;
+}
+/* line 336, ../../app/assets/stylesheets/pages.css.scss */
+.products .product-category .title {
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  font-size: 1.2VW;
+}
+/* line 341, ../../app/assets/stylesheets/pages.css.scss */
+.products .product-category .product-container {
+  float: left;
+  width: 30%;
+  height: 23vw;
+  margin: 0 0 50px 0;
+  text-align: center;
+  overflow: hidden;
+}
+/* line 348, ../../app/assets/stylesheets/pages.css.scss */
+.products .product-category .product-container img {
+  height: 70%;
+  margin-top: 10px;
+}
+/* line 352, ../../app/assets/stylesheets/pages.css.scss */
+.products .product-category .product-container .text {
+  height: 26.5%;
+  font-size: 1.2VW;
+  line-height: 8VW;
+}
+/* line 358, ../../app/assets/stylesheets/pages.css.scss */
+.products .product-category .margin-right {
+  margin-right: 5%;
+}
+/* line 362, ../../app/assets/stylesheets/pages.css.scss */
+.products .question, .products p {
+  font-size: 2.1VW;
+}
+/* line 365, ../../app/assets/stylesheets/pages.css.scss */
+.products p {
+  border: 1px solid;
+  padding: 1VW;
+  float: left;
+  margin-left: 43%;
+  cursor: pointer;
+}
+
+/* line 374, ../../app/assets/stylesheets/pages.css.scss */
+.item .title-container {
+  float: left;
+  position: relative;
+  margin: 70px 0 50px 5.5%;
+}
+/* line 378, ../../app/assets/stylesheets/pages.css.scss */
+.item .title-container .title {
+  font-size: 45px;
+}
+/* line 382, ../../app/assets/stylesheets/pages.css.scss */
+.item .main-product {
+  height: 23VW;
+  margin: 0 5.5%;
+}
+/* line 385, ../../app/assets/stylesheets/pages.css.scss */
+.item .main-product .product-image {
+  float: left;
+  height: 100%;
+  width: 49.9%;
+  border-right: 1px solid;
+  text-align: center;
+}
+/* line 391, ../../app/assets/stylesheets/pages.css.scss */
+.item .main-product .product-image img {
+  height: 100%;
+}
+/* line 395, ../../app/assets/stylesheets/pages.css.scss */
+.item .main-product .product-text {
+  float: left;
+  width: 49%;
+}
+/* line 398, ../../app/assets/stylesheets/pages.css.scss */
+.item .main-product .product-text .text {
+  font-size: 2vw;
+  line-height: 4vw;
+  margin: 9% 8% 0px;
+}
+/* line 405, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs {
+  margin: 50px 5.5% 0;
+}
+/* line 407, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .spec-container {
+  float: left;
+}
+/* line 409, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .spec-container .title {
+  float: left;
+  font-size: 2VW;
+  padding: 10px 60px 10px 0;
+  border-bottom: 1px solid;
+}
+/* line 415, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .spec-container .specs {
+  margin-top: 10px;
+  float: left;
+}
+/* line 419, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .spec-container .first {
+  margin-top: 30px;
+}
+/* line 423, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .spec-container .spec-sheet {
+  float: left;
+  margin-top: 30px;
+}
+/* line 426, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .spec-container .spec-sheet .button {
+  font-size: 23px;
+  float: left;
+}
+/* line 430, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .spec-container .spec-sheet .download-container {
+  float: left;
+  width: 22px;
+  margin-left: 30px;
+  border-bottom: 1px solid;
+}
+/* line 435, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .spec-container .spec-sheet .download-container img {
+  width: 100%;
+}
+/* line 440, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .spec-container a.download-button {
+  cursor: pointer;
+}
+/* line 445, ../../app/assets/stylesheets/pages.css.scss */
+.item .product-specs .last .title {
+  padding-right: 0px;
+}
+/* line 451, ../../app/assets/stylesheets/pages.css.scss */
+.item .item-image-slideshow .item-images {
+  height: 30VW;
+  margin: 30px 0 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 456, ../../app/assets/stylesheets/pages.css.scss */
+.item .item-image-slideshow .item-images img {
+  height: 95%;
+  margin: 0.5% 0;
+}
+/* line 460, ../../app/assets/stylesheets/pages.css.scss */
+.item .item-image-slideshow .item-images .invisible {
+  display: none;
+}
+/* line 464, ../../app/assets/stylesheets/pages.css.scss */
+.item .item-image-slideshow .sliders {
+  margin: 20px auto;
+  text-align: center;
+  float: left;
+}
+/* line 468, ../../app/assets/stylesheets/pages.css.scss */
+.item .item-image-slideshow .sliders .image-index {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 30px;
+  border: 1px solid #7e7e7e;
+  cursor: pointer;
+}
+/* line 477, ../../app/assets/stylesheets/pages.css.scss */
+.item .item-image-slideshow .sliders .picked {
+  background: #7e7e7e;
+}
+/* line 482, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+/* line 487, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .title-container {
+  float: left;
+  margin: 0 0 50px;
+  width: auto;
+}
+/* line 491, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .title-container .title {
+  font-size: 30px;
+  padding: 20px;
+  float: left;
+  border-bottom: 1px solid;
+}
+/* line 498, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .downloads-container {
+  margin: 0 5.5%;
+}
+/* line 500, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .downloads-container .download-row {
+  float: left;
+  width: 100%;
+}
+/* line 503, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .downloads-container .download-row .download-item {
+  float: left;
+  width: 47%;
+  margin: 0 1.5%;
+  padding: 20px 0;
+  border-top: 1px solid;
+}
+/* line 509, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .downloads-container .download-row .download-item .text {
+  float: left;
+  font-size: 24px;
+  margin-left: 10%;
+}
+/* line 514, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .downloads-container .download-row .download-item .image {
+  float: right;
+  height: 27px;
+  margin-right: 10%;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+/* line 520, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .downloads-container .download-row .download-item .image img {
+  height: 100%;
+}
+/* line 525, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .downloads-container .download-row .last {
+  border-bottom: 1px solid;
+}
+/* line 529, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .downloads-container .accessories {
+  float: left;
+  margin: 30px 0 0 1.5%;
+  font-size: 24px;
+}
+/* line 534, ../../app/assets/stylesheets/pages.css.scss */
+.item .downloads .downloads-container .accessory-container {
+  float: left;
+  width: 97%;
+  margin: 0 1.5%;
+  height: 23VW;
+  border-bottom: 1px solid;
+}
+/* line 543, ../../app/assets/stylesheets/pages.css.scss */
+.item .related {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  padding: 50px 0;
+}
+/* line 548, ../../app/assets/stylesheets/pages.css.scss */
+.item .related .title-container {
+  float: left;
+  background: none;
+  margin: 0;
+  width: auto;
+}
+/* line 553, ../../app/assets/stylesheets/pages.css.scss */
+.item .related .title-container .title {
+  font-size: 30px;
+  padding: 10px;
+  float: left;
+  border-bottom: 1px solid;
+  margin: 0;
+}
+/* line 561, ../../app/assets/stylesheets/pages.css.scss */
+.item .related .related-products-container {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+}
+/* line 565, ../../app/assets/stylesheets/pages.css.scss */
+.item .related .related-products-container .related-product {
+  float: left;
+  width: 20%;
+  height: 20VW;
+  text-align: center;
+}
+/* line 570, ../../app/assets/stylesheets/pages.css.scss */
+.item .related .related-products-container .related-product img {
+  width: 80%;
+}
+/* line 574, ../../app/assets/stylesheets/pages.css.scss */
+.item .related .related-products-container .middle {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+/* line 580, ../../app/assets/stylesheets/pages.css.scss */
+.item .button {
+  float: left;
+}
+/* line 582, ../../app/assets/stylesheets/pages.css.scss */
+.item .button p {
+  border: 1px solid;
+  padding: 20px 50px;
+  float: left;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+/* line 593, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .title-container {
+  float: left;
+  position: relative;
+  margin: 70px 0 50px 5.5%;
+}
+/* line 597, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .title-container .title {
+  font-size: 45px;
+}
+/* line 601, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .read-more {
+  position: absolute;
+  width: 25%;
+  right: 0;
+  margin: 10% 4% 0;
+  padding: 3%;
+  background: rgba(255, 255, 255, 0.8);
+}
+/* line 608, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .read-more .text {
+  font-size: 25px;
+}
+/* line 611, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .read-more .desc {
+  line-height: 23px;
+  margin-top: 20px;
+}
+/* line 615, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .read-more .button {
+  float: left;
+  margin: 33px 0 0 110px;
+  cursor: pointer;
+}
+/* line 619, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .read-more .button .text {
+  font-size: 15px;
+  float: left;
+}
+/* line 623, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .read-more .button img {
+  width: 20%;
+  float: left;
+  margin: -9px 0 0 17px;
+}
+/* line 630, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .project {
+  float: left;
+  width: 100%;
+  height: 35VW;
+  overflow: hidden;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+/* line 637, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .project img {
+  width: 100%;
+  height: auto;
+}
+/* line 643, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .item-image-slideshow .item-images {
+  height: 30VW;
+  margin: 30px 0 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 648, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .item-image-slideshow .item-images img {
+  height: 95%;
+  margin: 0.5% 0;
+}
+/* line 652, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .item-image-slideshow .item-images .invisible {
+  display: none;
+}
+/* line 656, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .item-image-slideshow .sliders {
+  margin: 20px auto;
+  text-align: center;
+  float: left;
+}
+/* line 660, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .item-image-slideshow .sliders .image-index {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 30px;
+  border: 1px solid #7e7e7e;
+  cursor: pointer;
+}
+/* line 669, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .item-image-slideshow .sliders .picked {
+  background: #7e7e7e;
+}
+/* line 674, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .brands {
+  margin: 50px 0;
+  float: left;
+  width: 100%;
+}
+/* line 678, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .brands .text {
+  float: left;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+/* line 684, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .brands .brands-container {
+  float: left;
+  width: 70%;
+  margin: 30px 15%;
+}
+/* line 688, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .brands .brands-container .image-container {
+  float: left;
+  width: 16%;
+  height: 6VW;
+  text-align: center;
+  position: relative;
+  margin: 10px 2%;
+}
+/* line 695, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .brands .brands-container .image-container img {
+  max-width: 100%;
+  max-height: 80%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: url(/assets/svg/desaturate.svg#greyscale);
+  filter: gray;
+  -webkit-filter: grayscale(1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+/* line 716, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup {
+  float: left;
+  width: 60%;
+  position: absolute;
+  margin: 25VW 4% 0;
+  z-index: 1000;
+  display: none;
+}
+/* line 723, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .left {
+  float: left;
+  width: 49%;
+  border-right: 1px solid;
+}
+/* line 727, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .left img {
+  float: left;
+  width: 90%;
+  margin: 20px 5% 20px;
+}
+/* line 733, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right {
+  float: right;
+  width: 50%;
+}
+/* line 736, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container {
+  float: left;
+  width: 80%;
+  margin: 20px 10% 20px;
+}
+/* line 740, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container .title {
+  font-size: 40px;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+/* line 746, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container .address {
+  font-size: 20px;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+/* line 752, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container .desc {
+  font-size: 20px;
+  float: left;
+  width: 100%;
+  margin: 30px 0 0;
+  word-spacing: 5px;
+  line-height: 30px;
+}
+/* line 760, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container .summary {
+  font-size: 30px;
+  margin: 50px 0 0;
+  text-align: center;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+}
+/* line 769, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container .summary-text {
+  margin: 30px 0 0;
+  font-size: 20px;
+  float: left;
+  width: 100%;
+}
+/* line 775, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container img {
+  float: left;
+  width: 45%;
+  height: 14VW;
+  margin: 20px 2.5% 10px;
+}
+/* line 781, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container .download-link {
+  float: left;
+  width: 45%;
+  margin: 20px 2.5% 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+}
+/* line 787, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container .download-link .text {
+  float: left;
+  font-size: 20px;
+}
+/* line 791, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container .download-link .download-container {
+  float: left;
+  width: 22px;
+  margin-left: 30px;
+  border-bottom: 1px solid;
+  cursor: pointer;
+}
+/* line 797, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .right .right-container .download-link .download-container img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+/* line 806, ../../app/assets/stylesheets/pages.css.scss */
+.project-page .popup .x-button {
+  float: right;
+  width: 23px;
+  margin: 4%;
+  cursor: pointer;
+}
+
+/* line 814, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page {
+  margin-bottom: 90px;
+}
+/* line 816, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .title-container {
+  float: left;
+  position: relative;
+  margin: 70px 0 50px 5.5%;
+}
+/* line 820, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .title-container .title {
+  font-size: 45px;
+}
+/* line 824, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container {
+  float: left;
+  width: 89%;
+  margin: 70px 5.5% 0;
+}
+/* line 828, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource {
+  width: 100%;
+  margin: 30px 0;
+  text-align: center;
+  float: left;
+}
+/* line 833, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .info-container {
+  float: left;
+  width: 100%;
+  height: 18VW;
+  cursor: pointer;
+}
+/* line 838, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .info-container .image-container {
+  float: left;
+  width: 100%;
+  height: 75%;
+}
+/* line 842, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .info-container .image-container img {
+  margin-top: 10px;
+  height: 100%;
+}
+/* line 847, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .info-container .text {
+  float: left;
+  width: 100%;
+  height: 20%;
+  font-size: 22px;
+  line-height: 4VW;
+  background-color: #e4e4e4;
+}
+/* line 854, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .info-container .text p {
+  margin: 0 0 0 6%;
+  float: left;
+}
+/* line 858, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .info-container .text img {
+  float: left;
+  height: 50%;
+  margin: 2% 0 0 23%;
+}
+/* line 865, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .downloads-container {
+  float: left;
+  width: 100%;
+  display: none;
+}
+/* line 869, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .downloads-container .download-item {
+  float: left;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid;
+}
+/* line 874, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .downloads-container .download-item .text {
+  float: left;
+  font-size: 24px;
+  margin-left: 10%;
+}
+/* line 879, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .downloads-container .download-item .image {
+  float: right;
+  height: 27px;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  margin-right: 4%;
+}
+/* line 885, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .downloads-container .download-item .image img {
+  height: 100%;
+}
+/* line 889, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .downloads-container .download-item .check {
+  float: right;
+  margin-right: 4%;
+  height: 28px;
+  cursor: pointer;
+  position: relative;
+}
+/* line 895, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .downloads-container .download-item .check img {
+  height: 100%;
+}
+/* line 898, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .resource-container .resource .downloads-container .download-item .check .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: -6px 0 0 5px;
+  display: none;
+}
+/* line 910, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .left {
+  width: 48%;
+  float: left;
+}
+/* line 914, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .right {
+  width: 48%;
+  float: right;
+}
+/* line 918, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all {
+  float: left;
+  width: 100%;
+  margin: 20px 0;
+  padding: 30px 0;
+  display: none;
+}
+/* line 924, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .title-container {
+  float: left;
+  background: none;
+  margin: 0;
+  width: auto;
+}
+/* line 929, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .title-container .title {
+  font-size: 30px;
+  float: left;
+  margin: 30px 0 0;
+}
+/* line 935, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .download-images-container {
+  float: left;
+  width: 89%;
+  margin: 50px 5.5% 0;
+}
+/* line 939, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .download-images-container .image-container {
+  width: 16%;
+  margin: 0 2%;
+  float: left;
+  position: relative;
+}
+/* line 944, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .download-images-container .image-container img {
+  width: 100%;
+  height: 13VW;
+  background-color: #6d6d6d;
+}
+/* line 949, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .download-images-container .image-container .x-button {
+  background: none;
+  position: absolute;
+  height: 1VW;
+  width: 7%;
+  top: 0;
+  right: 0;
+  margin: -3%;
+  cursor: pointer;
+}
+/* line 961, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .download-button-container {
+  float: left;
+  margin: 30px 0 0;
+}
+/* line 964, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .download-button-container .button {
+  float: left;
+  border: 1px solid;
+  padding: 20px;
+  cursor: pointer;
+}
+/* line 969, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .download-button-container .button p {
+  float: left;
+  font-size: 22px;
+  margin: 0;
+}
+/* line 974, ../../app/assets/stylesheets/pages.css.scss */
+.resources-page .download-all .download-button-container .button img {
+  margin-left: 10px;
+  float: left;
+  height: 20px;
+  border-bottom: 1px solid;
+}
+
+/* line 985, ../../app/assets/stylesheets/pages.css.scss */
+.contact .title-container {
+  position: relative;
+  margin: 70px 0 50px 80px;
+}
+/* line 989, ../../app/assets/stylesheets/pages.css.scss */
+.contact .contact-info-container {
+  margin-left: 80px;
+}
+/* line 991, ../../app/assets/stylesheets/pages.css.scss */
+.contact .contact-info-container .col-1-3 {
+  float: left;
+  position: relative;
+  display: inline;
+  width: 33%;
+}
+/* line 996, ../../app/assets/stylesheets/pages.css.scss */
+.contact .contact-info-container .col-1-3 .subtitle-1 {
+  display: inherit;
+  width: 58%;
+  border-bottom: 2px solid #d3d3d3;
+  margin: 0;
+  line-height: 30px;
+  font-size: 17px;
+  font-weight: 100;
+}
+/* line 1005, ../../app/assets/stylesheets/pages.css.scss */
+.contact .contact-info-container .col-1-3 p {
+  margin: 0;
+  font-size: large;
+}
+/* line 1009, ../../app/assets/stylesheets/pages.css.scss */
+.contact .contact-info-container .col-1-3 p.f-child {
+  margin-top: 20px;
+}
+/* line 1014, ../../app/assets/stylesheets/pages.css.scss */
+.contact .location-container {
+  float: left;
+  position: relative;
+  margin: 75px 80px 90px 80px;
+}
+/* line 1018, ../../app/assets/stylesheets/pages.css.scss */
+.contact .location-container .subtitle-1 {
+  font-weight: 500;
+}
+/* line 1021, ../../app/assets/stylesheets/pages.css.scss */
+.contact .location-container .map-container {
+  margin-top: 62px;
+}
+/* line 1023, ../../app/assets/stylesheets/pages.css.scss */
+.contact .location-container .map-container img {
+  width: 100%;
+}
+
+/* line 1029, ../../app/assets/stylesheets/pages.css.scss */
+.customNavigation {
+  text-align: center;
+}
+
+/* line 1032, ../../app/assets/stylesheets/pages.css.scss */
+.customNavigation a {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 1040, ../../app/assets/stylesheets/pages.css.scss */
+.careers {
+  margin-bottom: 60px;
+}
+/* line 1042, ../../app/assets/stylesheets/pages.css.scss */
+.careers .title-container {
+  position: relative;
+  margin: 70px 0 50px 80px;
+}
+/* line 1046, ../../app/assets/stylesheets/pages.css.scss */
+.careers .awards-patent-container {
+  clear: both;
+  padding: 0;
+  width: 100%;
+}
+/* line 1050, ../../app/assets/stylesheets/pages.css.scss */
+.careers .awards-patent-container .next, .careers .awards-patent-container .carousel, .careers .awards-patent-container .prev {
+  float: left;
+}
+/* line 1053, ../../app/assets/stylesheets/pages.css.scss */
+.careers .awards-patent-container .next, .careers .awards-patent-container .prev {
+  text-align: center;
+  margin-top: 72px;
+  cursor: pointer;
+}
+/* line 1058, ../../app/assets/stylesheets/pages.css.scss */
+.careers .awards-patent-container .next {
+  width: 10%;
+}
+/* line 1061, ../../app/assets/stylesheets/pages.css.scss */
+.careers .awards-patent-container .carousel {
+  width: 80%;
+}
+/* line 1064, ../../app/assets/stylesheets/pages.css.scss */
+.careers .awards-patent-container .carousel #awards-pat .item {
+  padding: 0;
+  margin: 10px;
+  color: #FFF;
+  text-align: center;
+}
+/* line 1069, ../../app/assets/stylesheets/pages.css.scss */
+.careers .awards-patent-container .carousel #awards-pat .item img {
+  width: 100%;
+  vertical-align: middle;
+}
+/* line 1077, ../../app/assets/stylesheets/pages.css.scss */
+.careers .awards-patent-container .prev {
+  width: 10%;
+}
+/* line 1081, ../../app/assets/stylesheets/pages.css.scss */
+.careers .openings-item {
+  padding: 0px 80px 0 80px;
+}
+/* line 1084, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container, .careers .current-openings-container {
+  padding: 75px 80px 0 80px;
+}
+/* line 1087, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container, .careers .current-openings-container, .careers .openings-item {
+  float: left;
+}
+/* line 1089, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .subtitle-1, .careers .current-openings-container .subtitle-1, .careers .openings-item .subtitle-1 {
+  font-weight: 500;
+  margin-bottom: 34px;
+}
+/* line 1092, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .career-category-container, .careers .current-openings-container .career-category-container, .careers .openings-item .career-category-container {
+  margin-bottom: 2%;
+}
+/* line 1094, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .career-category-container:last-child, .careers .current-openings-container .career-category-container:last-child, .careers .openings-item .career-category-container:last-child {
+  margin-bottom: 25px;
+}
+/* line 1098, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .career-category, .careers .current-openings-container .career-category, .careers .openings-item .career-category {
+  display: none;
+  margin-bottom: 4%;
+}
+/* line 1102, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .col-1-2, .careers .current-openings-container .col-1-2, .careers .openings-item .col-1-2 {
+  float: left;
+  display: inline;
+  width: 48%;
+  text-align: justify;
+  margin-right: 1%;
+}
+/* line 1108, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .col-1-2:last-child, .careers .current-openings-container .col-1-2:last-child, .careers .openings-item .col-1-2:last-child {
+  margin-right: 0;
+  margin-left: 1%;
+}
+/* line 1112, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .col-1-2 .accordion-img-container, .careers .current-openings-container .col-1-2 .accordion-img-container, .careers .openings-item .col-1-2 .accordion-img-container {
+  margin-bottom: 0;
+}
+/* line 1114, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .col-1-2 .accordion-img-container .accordion-img, .careers .current-openings-container .col-1-2 .accordion-img-container .accordion-img, .careers .openings-item .col-1-2 .accordion-img-container .accordion-img {
+  display: block;
+}
+/* line 1117, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .col-1-2 .accordion-img-container .accordion, .careers .current-openings-container .col-1-2 .accordion-img-container .accordion, .careers .openings-item .col-1-2 .accordion-img-container .accordion {
+  margin: 0;
+  background: #efeeeb;
+  line-height: 37px;
+  text-align: center;
+  cursor: pointer;
+}
+/* line 1123, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .col-1-2 .accordion-img-container .accordion .accordion-icon, .careers .current-openings-container .col-1-2 .accordion-img-container .accordion .accordion-icon, .careers .openings-item .col-1-2 .accordion-img-container .accordion .accordion-icon {
+  display: block;
+}
+/* line 1128, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .col-1-2 .accordion-item, .careers .current-openings-container .col-1-2 .accordion-item, .careers .openings-item .col-1-2 .accordion-item {
+  background-color: white;
+}
+/* line 1130, ../../app/assets/stylesheets/pages.css.scss */
+.careers .careers-container .col-1-2 .accordion-item p, .careers .current-openings-container .col-1-2 .accordion-item p, .careers .openings-item .col-1-2 .accordion-item p {
+  margin: 0;
+  text-align: left;
+  text-indent: 6%;
+  border-bottom: 2px solid #d3d3d3;
+  line-height: 39px;
+}
+
+/* line 1142, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .title-container {
+  float: left;
+  position: relative;
+  margin: 70px 0 50px 5.5%;
+}
+/* line 1146, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .title-container .title {
+  font-size: 45px;
+}
+/* line 1150, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .story {
+  float: left;
+  width: 100%;
+  height: 30VW;
+  margin: 0 0 3VW;
+}
+/* line 1155, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .story p {
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 24VW;
+  font-size: 30px;
+}
+/* line 1164, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .manifesto {
+  float: left;
+  width: 90%;
+  margin: 0 5% 80px;
+}
+/* line 1168, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .manifesto .text {
+  font-size: 26px;
+  margin: 0 0 30px;
+}
+/* line 1172, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .manifesto .paragraph {
+  font-size: 22px;
+  line-height: 31px;
+}
+/* line 1176, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .manifesto .left {
+  width: 45%;
+  float: left;
+}
+/* line 1180, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .manifesto .right {
+  width: 48%;
+  float: right;
+}
+/* line 1185, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .system {
+  float: left;
+  width: 100%;
+  margin: 40px 0;
+}
+/* line 1189, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .system .system-container {
+  float: left;
+  width: 100%;
+  height: 35VW;
+  margin: 30px 0 0;
+}
+/* line 1194, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .system .system-container .column {
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+/* line 1198, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .system .system-container .column .column-upper {
+  float: left;
+  width: 100%;
+  height: 80%;
+}
+/* line 1202, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .system .system-container .column .column-upper .title {
+  font-size: 1.5VW;
+  margin-top: 15VW;
+}
+/* line 1207, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .system .system-container .column .column-lower {
+  float: left;
+  width: 100%;
+  height: 20%;
+  background-color: #6d6d6d;
+}
+/* line 1214, ../../app/assets/stylesheets/pages.css.scss */
+.who-page .system .system-container .side {
+  width: 24.6%;
+  border-right: 1px solid;
+}
