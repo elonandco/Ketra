@@ -1,0 +1,1440 @@
+$grayMediumLight: #7e7e7e;
+
+@font-face {
+  font-family: azosans_thin;
+  src: url('AzoSans-Thin.otf');
+  src: local('azosans_thin'),
+  url('AzoSans-Thin.otf') format('opentype');
+}
+@font-face {
+  font-family: azosans_light;
+  src: url('AzoSans-Light.otf');
+  src: local('azosans_light'),
+  url('AzoSans-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: azosans_regular;
+  src: url('AzoSans-Regular.otf');
+  src: local('azosans_regular'),
+  url('AzoSans-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: azosans_medium;
+  src: url('AzoSans-Medium.otf');
+  src: local('azosans_medium'),
+  url('AzoSans-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: baskerville;
+  src: url('Baskerville.otf');
+  src: local('baskerville'),
+  url('Baskerville.otf') format('opentype');
+}
+@font-face {
+  font-family: brandon-grotesque-light;
+  src: url('Brandon-Grotesque-Light.otf');
+  src: local('brandon-grotesque-light'),
+  url('Brandon-Grotesque-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: brandon-grotesque-regular;
+  src: url('Brandon-Grotesque-Regular.otf');
+  src: local('brandon-grotesque-regular'),
+  url('Brandon-Grotesque-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: freight-disp-book;
+  src: url('Freight-Disp-Book.otf');
+  src: local('freight-disp-book'),
+  url('Freight-Disp-Book.otf') format('opentype');
+}
+
+// Body for all the pages
+body {
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: $grayMediumLight;
+}
+.arial {
+  font-family: azosans_regular;//Font used for some the texts that is using azosans_regulars
+}
+.arial.medium, .arial .medium {
+  font-family: azosans_medium;//Font used for some the texts that is using azosans_medium
+}
+.font-grey {
+  color: $grayMediumLight;//Font color used for some the texts that is using Grey Medium Light
+}
+.bold {
+  font-weight: bold; //Used when the font is bold
+}
+.text-align-center {
+  text-align: center; //Used when the text needs to be centered inside a div
+}
+.img-1-1{
+  width: 100%;//Used when image width is the same with container.
+}
+.img-1-2{
+  width: 50%;//Used when image width 1/2 with container.
+}
+.img-1-4{
+  width: 25%;//Used when image width 1/4 with container.
+}
+.img-3-4{
+  width: 75%;//Used when image width 3/4 with container.
+}
+.header { //This css is used for the Header
+  float: left;
+  width: 100%;
+  margin-top: 30px;
+  .title {
+    float: left;
+    font-size: 30px;
+    margin: 0 0 0 80px;
+    letter-spacing: 15px;
+    font-family: freight-disp-book;
+  }
+  .ketra-logo { //This is the logo for the upper left corner of the page
+    float: left;
+    width: 12%;
+    margin: 0 0 0 5VW;
+  }
+  .search { //This is the search bar on the upper right corner of the page
+    float: right;
+    margin: 0 20px 0 0;
+    padding: 13px;
+    input {
+      float: left;
+      background: none;
+      border: 0px;
+      font-size: 15px;
+      line-height: 22px;
+      font-family: brandon-grotesque-regular;
+    }
+    input::-webkit-input-placeholder {
+      color: #000;
+    }
+    img { //This is for the Magnifying glass image on the upper right corner of the page
+      float: left;
+      width: 23px;
+      margin-right: 10px;
+    }
+  }
+  .menu-container {
+    float: right;
+    .menu-button { //This is for the Menu Button image on the upper right corner of the page
+      margin: 0 80px 0 0;
+      width: 50px;
+      cursor: pointer;
+    }
+    .menu-hover { //This is for the Menu Container on the Header
+      position: absolute;
+      margin: -55px 0 0 -150px;
+      display: none;
+      z-index: 10000;
+
+      .menu-hover-container {
+        background: #7e7e7e;
+        float: left;
+        width: 200px;
+        .x-button{
+          float: right;
+          width: 23px;
+          margin: 10px;
+          cursor: pointer;
+        }
+        .page-container {
+          margin: 40px 0 20px 20px;
+          color: #ffffff;
+          letter-spacing: 2px;
+          .page {
+            margin-top: 10px;
+            font-size: 19px;
+            cursor: pointer;
+            a { //This is for each button on the Menu Container
+              color:white;
+              &:hover {
+                color:white;
+              }
+            }
+          }
+          .sub-page { //This is for when a certain page has a subcontent
+            margin: 6px 0 0 25px;
+            font-size: 14px;
+            cursor: pointer;
+            a {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.body { //This is used for for all the pages
+  float: none;
+  max-width: none;
+  margin: 0 auto;
+  margin-top: 8VW;
+  .row{ //This is used to seperate each section on a page
+    float: left;
+    width: 100%;
+  }
+  .light-grey{
+    background-color: #d3d3d3;
+  }
+  .margin {
+    margin: 20px 0;
+  }
+  .margin-bottom {
+    margin: 0 0 20px 0;
+  }
+  .title-container { //This is used for the title in the Home Page
+    position: absolute;
+    margin: 7VW 0 0 5VW;
+    background: #ffffff;
+    z-index: 20;
+    width: 33VW;
+    .title{
+      margin-top: 1.5VW;
+      font-size: 2.5VW;
+      line-height: 3.5VW;
+      font-family: freight-disp-book;
+      color: #231F20;
+    }
+    .desc { //This is for the title's description
+      margin: 1.4VW 0;
+      line-height: 1.5VW;
+      color: #414042;
+      font-size: 1VW;
+      font-family: brandon-grotesque-regular;
+    }
+  }
+  .background-image { //This is used for the image behind the title on the Home Page
+    width: 70%;
+    float: right;
+  }
+  .system {//This is used for the Ketra System section in the Home Page
+    padding: 4VW 0;
+    margin-top: -5px;
+    .title {
+      float: left;
+      width: 100%;
+      text-align: center;
+      font-size: 1.6VW;
+      letter-spacing: 0.3VW;
+      color: #231F20;
+      font-family: azosans_medium;
+    }
+    .system-options {//This contains all the options in the Ketra System
+      width: 80%;
+      margin: 7VW auto 0;
+      .option {//This is used for each option in Ketra System; Lighting, Controls, Customized Content and Solustions & Services
+        width: 25%;
+        text-align: center;
+        float: left;
+        img {
+          height: 6VW;
+        }
+      }
+      .option-border {
+        margin: 1VW auto 0;
+        width: 60%;
+        border-top: 1px solid;
+      }
+      .option-text {
+        margin: 0 auto;
+        font-size: 1VW;
+        padding-top: 0.7VW;
+        font-family: azosans_medium;
+        color: #414042;
+      }
+    }
+    .desc {//This is used for the description of the Ketra System
+      margin-top: 2VW;
+      float: left;
+      text-align: center;
+      width: 100%;
+      line-height: 1.5VW;
+      word-spacing: 0.3VW;
+      font-family: baskerville;
+      font-size: 1.6VW;
+      color: #414042;
+    }
+    .system-more {//This is for the Learn More button for the Ketra System
+      width: 100%;
+      float: left;
+      text-align: center;
+      .button {
+        float: left;
+        margin: 4VW 0 0 42VW;
+        border: 1px solid #414042;
+        padding: 0 2VW;
+        cursor: pointer;
+        p{
+          float: left;
+          font-size: 1.2VW;
+          font-family: brandon-grotesque-regular;
+          color: #414042;
+          margin: 0.9VW 0;
+        }
+        img {
+          float: left;
+          width: 3VW;
+          margin: 0.8VW 0 0 2VW;
+        }
+      }
+    }
+  }
+  .home-desc {//This is used for each image sections on the Home Page
+    iframe {
+      float: left;
+      width: 100%;
+      height: 37VW;
+    }
+    img.main{//This is used for the images for each paragraph section
+      float: left;
+    }
+    .home-desc-container {//This is used for the paragraphs themselves
+      float: left;
+      margin: 3.5VW 0 0;
+      color: #231F20;
+      font-size: 1.2VW;
+      .title {
+        text-align: left;
+        font-family: azosans_medium;
+        margin: 0 3.9VW 0;
+        line-height: 1.2VW;
+        font-weight: normal;
+      }
+      .desc {
+        margin: 4VW 4VW 0;
+        text-align: left;
+        word-spacing: 0.1VW;
+        line-height: 2VW;
+        font-family: azosans_light;
+      }
+    }
+    .mask { //This is used for the play button for the video on the Home Page
+      position: absolute;
+      width: 100%;
+      opacity: 0.5;
+      z-index: 1000;
+      background: #ffffff;
+      text-align: center;
+      cursor: pointer;
+      img{
+        height: 50px;
+        width: 50px;
+        margin-top: 26VW;
+      }
+    }
+  }
+  .learn-more-container {//This is used for the Explore Our Products button on the Home Page
+    float: left;
+    width: 100%;
+    margin-bottom: 50px;
+    .button {
+      float: left;
+      margin: 50px 0 0 40%;
+      border: 1px solid;
+      padding: 3px 19px;
+      cursor: pointer;
+      p {
+        float: left;
+        font-size: 16px;
+        font-family: azosans_regular;
+      }
+      img {
+        float: left;
+        width: 41px;
+        margin: 10px 0 0 10px;
+      }
+    }
+  }
+}
+.footer { //This css is used for the Foooter of all pages
+  float: left;
+  width: 100%;
+  color: #231F20;
+  .pages { //This is used for the Pages section that contains all the names of all the pages
+    float: left;
+    width: 28%;
+    padding-bottom: 30px;
+    border-top: 3px solid #d3d3d3;
+    border-right: 1px solid;
+    .title {
+      margin-top: 30px;
+      float: left;
+      width: 50%;
+      font-size: 17px;
+      letter-spacing: 3px;
+      p {// This is used for each page name on the Pages Section
+        float: left;
+        margin: 0 0 0 50px;
+        cursor: pointer;
+        a {
+          font-family: azosans_light;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .contacts {// This is used for the Contacts Section of the Footer
+    float: left;
+    border-top: 3px solid #d3d3d3;
+    width: 71.8%;
+    .contact-container {
+      float: left;
+      .text {
+        margin: 5px 0 0 52px;
+        font-size: 14px;
+        font-family: azosans_light;
+      }
+      .title {
+        margin-top: 28px;
+        font-family: azosans_medium;
+        font-size: 14px;
+      }
+    }
+    .social { //This is used for the Social Buttons section of the Footer
+      padding: 0px;
+      margin: 0px;
+      img {
+        margin: 27px 15px 0 0;
+        float: left;
+        width: 10%;
+        cursor: pointer;
+      }
+    }
+    .cont-40 {
+      width: 40%;
+    }
+    .cont-20 {
+      width: 20%;
+    }
+  }
+}
+.products { //This css is used for the Products Page
+  .title-container{
+    float: left;
+    position: relative;
+    margin: 5VW 0 3VW 3.5%;
+  }
+  .product-category {// This is used for the container of all the products on the Products Page
+    margin: 0 4VW;
+    .title {
+      letter-spacing: 2px;
+      margin-bottom: 30px;
+      font-size: 18px;
+      font-family: azosans_medium;
+    }
+    .product-container {// This is used for each product displayed
+      float: left;
+      width: 30%;
+      height: 23vw;
+      margin: 0 0 50px 0;
+      text-align: center;
+      overflow: hidden;
+      font-family: azosans_medium;
+      color: #58585B;
+      font-size: 17px;
+      img {
+        height: 70%;
+        margin-top: 10px;
+      }
+      .text {
+        height: 26.5%;
+        font-size: 1.2VW;
+        line-height: 8VW;
+      }
+    }
+    .margin-right {
+      margin-right: 5%;
+    }
+  }
+  .question, p { //This is used for the Let's Talk button on the bottom of the Products Page
+    font-family: baskerville;
+    font-size: 28px;
+    color: #231F20;
+  }
+  p {
+    border: 1px solid;
+    padding: 1VW;
+    float: left;
+    margin-left: 45%;
+    cursor: pointer;
+  }
+  .title {
+    font-size: 42px;
+    color: #231F20;
+    font-family: baskerville;
+  }
+  .desc {
+    font-size: 15px;
+    color: #231F20;
+    font-family: baskerville;
+  }
+}
+.item {// This css is used for the Items Page
+  .title-container{
+    float: left;
+    position: relative;
+    margin: 4.5VW 0 3.4VW 5.5%;
+    .title {
+      font-size: 45px;
+    }
+  }
+  .main-product {//This is used for the Product Section of the Items page
+    height: 23VW;
+    margin: 0 5.5%;
+    .product-image {
+      float: left;
+      height: 100%;
+      width: 49.9%;
+      border-right: 1px solid;
+      text-align: center;
+      img {
+        height: 100%;
+      }
+    }
+    .product-text {
+      float: left;
+      width: 49%;
+      .text {
+        font-size: 2vw;
+        line-height: 4vw;
+        margin: 9% 8% 0px;
+      }
+    }
+  }
+  .product-specs {// This is used for the Product Specifications
+    margin: 50px 5.5% 0;
+    .spec-container {// This is for the container of each specification
+      float: left;
+      .title {
+        float: left;
+        font-size: 2VW;
+        padding: 10px 60px 10px 0;
+        // border-bottom: 1px solid;
+      }
+      .specs {
+        margin-top: 10px;
+        float: left;
+      }
+      .first {
+        margin-top: 30px;
+      }
+
+      .spec-sheet {// This is used for the download link for the Product Specification Sheet
+        float: left;
+        margin-top: 30px;
+        .button {
+          font-size: 23px;
+          float: left;
+        }
+        .download-container {
+          float: left;
+          width: 22px;
+          margin-left: 30px;
+          // border-bottom: 1px solid;
+          img {
+            width: 100%;
+          }
+        }
+      }
+      a.download-button {
+        cursor: pointer;
+      }
+    }
+    .last {
+      .title {
+        padding-right: 0px;
+      }
+    }
+  }
+  .item-image-slideshow {// This is used for the Slideshow of images the product is using
+    .item-images{
+      height: 30VW;
+      margin: 30px 0 0;
+      width: 100%;
+      text-align: center;
+      img {
+        height: 95%;
+        margin: 0.5% 0;
+      }
+      .invisible {
+        display: none;
+      }
+    }
+    .sliders {// This is used to display the number of images the product is currently using
+      margin: 20px auto;
+      text-align: center;
+      float: left;
+      .image-index {
+        float: left;
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+        border-radius: 30px;
+        border: 1px solid $grayMediumLight;
+        cursor: pointer;
+      }
+      .picked {
+        background: $grayMediumLight;
+      }
+    }
+  }
+  .downloads {// This is used for the Download Links Section of the Item Page
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    .title-container {
+      float: left;
+      margin: 0 0 50px;
+      width: auto;
+      .title {
+        font-size: 30px;
+        padding: 20px;
+        float: left;
+        // border-bottom: 1px solid;
+      }
+    }
+    .downloads-container {// This is used for each download link for the Download Links Section
+      margin: 0 5.5%;
+      .download-row {
+        float: left;
+        width: 100%;
+        .download-item {
+          float: left;
+          width: 47%;
+          margin: 0 1.5%;
+          padding: 20px 0;
+          border-top: 1px solid;
+          .text{
+            float: left;
+            font-size: 24px;
+            margin-left: 10%;
+          }
+          .image {
+            float: right;
+            height: 27px;
+            margin-right: 10%;
+            // border-bottom: 1px solid;
+            cursor: pointer;
+            img {
+              height: 100%;
+            }
+          }
+        }
+        .last {
+          border-bottom: 1px solid;
+        }
+      }
+      .accessories {// This is used for the Accessories section of the Item Page
+        float: left;
+        margin: 30px 0 0 1.5%;
+        font-size: 24px;
+      }
+      .accessory-container {
+        float: left;
+        width: 97%;
+        margin: 0 1.5%;
+        height: 23VW;
+        border-bottom: 1px solid;
+      }
+    }
+  }
+  .related { //This is used for the Related Products Section of the Item Page
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+    padding: 50px 0;
+    .title-container {
+      float: left;
+      background: none;
+      margin: 0;
+      width: auto;
+      .title {
+        font-size: 30px;
+        padding: 10px;
+        float: left;
+        border-bottom: 1px solid;
+        margin: 0;
+      }
+    }
+    .related-products-container {
+      float: left;
+      width: 100%;
+      margin: 20px 0;
+      .related-product{
+        float: left;
+        width: 20%;
+        height: 20VW;
+        text-align: center;
+        img {
+          width: 80%;
+        }
+      }
+      .middle {
+        border-left: 1px solid;
+        border-right: 1px solid;
+      }
+    }
+  }
+  .button {// This is used for the View All Products button on the bottom of the Item Page
+    float: left;
+    p {
+      border: 1px solid;
+      padding: 20px 50px;
+      float: left;
+      // margin-left: 38%;
+      cursor: pointer;
+      font-size: 30px;
+    }
+  }
+}
+.project-page {// This css is used for the Projects Page
+  .title-container{
+    float: left;
+    position: relative;
+    margin: 70px 0 50px 5.5%;
+    .title {
+      font-size: 42px;
+      font-family: baskerville;
+      color: #231F20;
+    }
+    .desc {
+      font-size: 15px;
+      font-family: baskerville;
+      color: #231F20;
+    }
+  }
+  .read-more { // This is used for the Read More Section of the Projects page
+    position: absolute;
+    width: 25%;
+    right: 0;
+    margin: 10% 4% 0;
+    padding: 3%;
+    background:rgba(255,255,255,0.8);
+    .text {
+      font-size: 28px;
+      font-family: baskerville;
+    }
+    .desc {
+      line-height: 23px;
+      margin-top: 20px;
+      font-family: baskerville;
+      font-size: 13px;
+    }
+    .button {
+      float: left;
+      margin: 33px 0 0 110px;
+      cursor: pointer;
+      .text {
+        font-size: 11px;
+        float: left;
+        font-family: brandon-grotesque-regular;
+      }
+      img {
+        width: 20%;
+        float: left;
+        margin: -9px 0 0 17px;
+      }
+    }
+  }
+  .project {// This is used for each project in the Projects Page
+    float: left;
+    width: 100%;
+    // height: 35VW;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .item-image-slideshow { // This is used for the Images Section of the Projects page
+    margin: 13VW 0 0;
+    .item-images{
+      // height: 30VW;
+      margin: 30px 0 0;
+      width: 100%;
+      text-align: center;
+      img {
+        // height: 95%;
+        width: 100%;
+        // margin: 0.5% 0;
+      }
+      .invisible {
+        display: none;
+      }
+    }
+    .sliders { // This is used to display the number of images that is currently being used
+      margin: 20px auto;
+      text-align: center;
+      float: left;
+      .image-index {
+        float: left;
+        width: 10px;
+        height: 10px;
+        margin: 0 10px;
+        border-radius: 30px;
+        border: 1px solid $grayMediumLight;
+        cursor: pointer;
+      }
+      .picked {
+        background: $grayMediumLight;
+      }
+    }
+  }
+  .brands {// This is used for the Brands Section of the Projects Page
+    margin: 50px 0;
+    float: left;
+    width: 100%;
+    .text {
+      float: left;
+      width: 100%;
+      text-align: center;
+      font-size: 30px;
+      font-family: brandon-grotesque-regular;
+    }
+    .brands-container {
+      float: left;
+      width: 70%;
+      margin: 30px 15%;
+      .image-container {// This is used for each brand inside the Brands Section
+        float: left;
+        width: 16%;
+        height: 6VW;
+        text-align: center;
+        position:relative;
+        margin: 10px 2%;
+        img {
+          max-width: 100%;
+          max-height:80%;
+          filter: grayscale(100%);
+          -webkit-filter: grayscale(100%);
+          -moz-filter: grayscale(100%);
+          -ms-filter: grayscale(100%);
+          -o-filter: grayscale(100%);
+          filter: url(/assets/svg/desaturate.svg#greyscale);
+          filter: gray;
+          -webkit-filter: grayscale(1);
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+        }
+      }
+    }
+  }
+  .popup {// This is used for the Project Popup on the Projects Page
+    float: left;
+    width: 90%;
+    position: absolute;
+    margin: 25VW 5% 0;
+    padding: 5VW 0;
+    z-index: 1000;
+    display: none;
+    .left {// This is used for the container on the left side that displays the project images
+      float: left;
+      width: 49%;
+      border-right: 1px solid;
+      overflow: hidden;
+      .left-container {
+        float: left;
+        height: 100%;
+        overflow-y:auto;
+        margin-right: -15px;
+        img {
+          float: left;
+          width: 90%;
+          margin: 20px 5% 20px;
+        }
+      }
+    }
+    .right {// This is used for the container of the right side that displays the project's speicifications
+      float: right;
+      width: 50%;
+      .right-container {
+        float: left;
+        width: 80%;
+        margin: 20px 10% 20px;
+        .title {
+          font-size: 40px;
+          float: left;
+          width: 100%;
+          text-align: center;
+        }
+        .address {
+          font-size: 20px;
+          float: left;
+          width: 100%;
+          text-align: center;
+        }
+        .desc {
+          font-size: 20px;
+          float: left;
+          width: 100%;
+          margin: 30px 0 0;
+          word-spacing: 5px;
+          line-height: 30px;
+        }
+        .summary {
+          font-size: 30px;
+          margin: 50px 0 0;
+          text-align: center;
+          float: left;
+          width: 100%;
+          border-bottom: 1px solid;
+          padding-bottom: 20px;
+        }
+        .summary-text {
+          margin: 30px 0 0;
+          font-size: 20px;
+          float: left;
+          width: 100%;
+        }
+        img { // This is used for each product the project is currently using
+          float: left;
+          width: 45%;
+          height: 14VW;
+          margin: 20px 2.5% 10px;
+        }
+        .download-link, .product-link { // This is used for each download link the project is using
+          float: left;
+          width: 45%;
+          margin: 20px 2.5% 10px;
+          padding-bottom: 10px;
+          border-bottom: 1px solid;
+          .text {
+            float: left;
+            font-size: 2VW;
+          }
+          .download-container {
+            float: left;
+            width: 2VW;
+            margin: -0.6VW 0 0 2VW;
+            // border-bottom: 1px solid;
+            cursor: pointer;
+            img {
+              width: 100%;
+              height: auto;
+              margin: 0;
+            }
+          }
+        }
+        .product-link {
+          border:0;
+          width: 100%;
+          .text {
+            width: 45%;
+            margin: 20px 0 0;
+            font-size: 1.5VW;
+          }
+        }
+      }
+    }
+    .x-button{// This is used for the close button of the project popup
+      float: right;
+      width: 23px;
+      margin: 4%;
+      cursor: pointer;
+    }
+  }
+}
+.resources-page { // This css is used for the Resources Page
+  margin-bottom: 90px;
+  .title-container{
+    float: left;
+    position: relative;
+    margin: 70px 0 50px 5.5%;
+    .title {
+      font-size: 45px;
+    }
+  }
+  .resource-containers {
+    margin-bottom: 25VW;
+  }
+  .resource-container {// This is used for the container of all the resources in the Resources Page
+    float: left;
+    width: 89%;
+    margin: 0 5.5%;
+    .resource {// This is used for each container on the Resources Page
+      width: 47%;
+      margin: 0 1.5%;
+      text-align: center;
+      float: left;
+      .info-container {// This is used for the information of the current resource
+        float: left;
+        width: 100%;
+        height: 18VW;
+        cursor: pointer;
+        .image-container {
+          float: left;
+          width: 100%;
+          height: 60%;
+          img {
+            margin-top: 10px;
+            height: 100%;
+          }
+        }
+        .text {
+          float: left;
+          width: 100%;
+          height: 20%;
+          line-height: 3.5VW;
+          background-color: #e4e4e4;
+          p {
+            margin: 0 0 0 6%;
+            float: left;
+            font-family: brandon-grotesque-regular;
+            font-size: 1.4VW;
+            color: #404041;
+          }
+          img {
+            float: left;
+            height: 50%;
+            margin: 0.8VW 0 0 23%;
+          }
+        }
+      }
+      .downloads-container {// This is used for the container of current resource's download links
+        float: left;
+        width: 100%;
+        display: none;
+        margin: 0 0 4VW;
+        .download-header {
+          float: right;
+          width: 100%;
+          .text {
+            font-size: 1VW;
+            float: right;
+          }
+          .margin {
+            margin: 0 2VW;
+          }
+        }
+        .download-item {// This is used for each download link of the current resource
+          float: left;
+          width: 100%;
+          padding: 20px 0;
+          border-bottom: 1px solid;
+          .text{
+            float: left;
+            font-size: 24px;
+            margin-left: 10%;
+            font-family: brandon-grotesque-regular;
+            font-size: 1.5VW;
+            color: #404041;
+          }
+          .image {
+            float: right;
+            height: 1.8VW;
+            // border-bottom: 1px solid;
+            cursor: pointer;
+            margin-right: 4%;
+            img {
+              height: 100%;
+            }
+          }
+          .check {
+            float: right;
+            margin: 0 4% 0 2%;
+            height: 1.8VW;
+            width: 14%;
+            cursor: pointer;
+            position: relative;
+            img {
+              height: 100%;
+            }
+            .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              margin: -0.5VW 0 0 2.5VW;
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .left {
+    width: 48%;
+    float: left;
+  }
+  .right {
+    width: 48%;
+    float: right;
+  }
+  .download-all {// This is used for the Download All Section of the Resources Page
+    float: left;
+    width: 100%;
+    margin: 20px 0 0;
+    padding: 30px 0;
+    position: fixed;
+    bottom: 0;
+    z-index: 10000;
+    display: none;
+    .title-container {
+      float: left;
+      background: none;
+      margin: 0;
+      width: auto;
+      .title {
+        font-size: 30px;
+        float: left;
+        margin: 30px 0 0;
+        font-family: brandon-grotesque-light;
+        font-size: 25px;
+      }
+    }
+    .download-images-container {
+      float: left;
+      width: 89%;
+      margin: 50px 5.5% 0;
+      .image-container { //This is used for each download item on the Download All Section
+        width: 16%;
+        margin: 0 2%;
+        float: left;
+        position: relative;
+        img {
+          width: 100%;
+          height: 140px;
+          background-color: #6d6d6d;
+        }
+        .x-button {
+          background: none;
+          position: absolute;
+          height: 1VW;
+          width: 7%;
+          top: 0;
+          right: 0;
+          margin: -3%;
+          cursor: pointer;
+        }
+      }
+    }
+    .download-button-container {
+      float: left;
+      margin: 30px 0 0;
+      .button {
+        float: left;
+        border: 1px solid;
+        padding: 20px;
+        cursor: pointer;
+        p {
+          float: left;
+          font-size: 22px;
+          margin: 0;
+        }
+        img {
+          margin-left: 10px;
+          float: left;
+          height: 20px;
+          // border-bottom: 1px solid;
+          font-family: brandon-grotesque-light;
+          font-size: 25px;
+          color: #231F20;
+        }
+      }
+    }
+  }
+}
+.contact {// This css is used for the Contacts Page
+  .title-container {
+    position: relative;
+    margin: 70px 0 50px 80px;
+  }
+  .contact-info-container {// This is used for the container of the Contact Information provided
+    margin-left: 80px;
+    font-family: brandon-grotesque-light;
+    .col-1-3 {
+      float: left;
+      position: relative;
+      display: inline;
+      width:33%;
+      .subtitle-1 {
+        display: inherit;
+        width: 58%;
+        border-bottom: 2px solid #d3d3d3;
+        margin: 0;
+        line-height: 30px;
+        font-size: 17px;
+        font-weight: 100;
+      }
+      p {
+        margin: 0;
+        font-size: 23px;
+      }
+      p.f-child {
+        margin-top: 20px;
+      }
+    }
+  }
+  .location-container {// This is used for the location of the Contact Information
+    float: left;
+    position: relative;
+    margin: 75px 80px 90px 80px;
+    font-family: baskerville;
+    .subtitle-1 {
+      font-size: 28px;
+    }
+    .desc {
+      font-size: 15px;
+    }
+    .map-container {
+      margin: 62px 0 200px 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.customNavigation{
+  text-align: center;
+}
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.careers {// This css is used for the Careers Page
+  margin-bottom: 60px;
+  .title-container {
+    position: relative;
+    margin: 7VW 0 3VW 5VW;
+  }
+  .awards-patent-container {// This is used for the Awards/Patents Section
+    clear: both;
+    padding: 0;
+    width: 100%;
+    .next, .carousel, .prev {
+      float: left;
+    }
+    .next, .prev {
+      text-align: center;
+      margin-top: 72px;
+      cursor: pointer;
+    }
+    .next {
+      width: 10%;
+    }
+    .carousel {
+      width: 80%;
+      #awards-pat {// This is used for the container of each award/patent
+        .owl-item {
+          height: 100%;
+          float: left;
+          .item {
+            float: left;
+            height: 100%;
+            padding: 0;
+            margin: 10px;
+            color: #FFF;
+            text-align: center;
+            img {
+              height: 100%;
+            }
+          }
+        }
+      }
+
+    }
+    .prev {
+      width: 10%;
+    }
+  }
+  .openings-item {
+    padding: 0px 80px 0 80px;
+  }
+  .careers-container, .current-openings-container { // This is used for the sections inside the Careers Page
+    padding: 75px 80px 100px 80px;
+  }
+  .careers-container, .current-openings-container, .openings-item {// This is used for the container for the Current Openings Seciton
+    float: left;
+    .subtitle-1 {
+      font-weight: 500;
+      margin-bottom: 34px;
+      font-family: baskerville;
+      font-size: 28px;
+    }.career-category-container {
+      margin-bottom: 1%;
+      &:last-child {
+        margin-bottom: 25px;
+      }
+    }
+    .career-category {
+      display: none;
+      margin-bottom: 4%;
+    }
+    .col-1-2 {// This is used for each opening in the Current Openings Section
+      float: left;
+      display: inline;
+      width: 48%;
+      text-align: justify;
+      margin-right: 1%;
+      font-family: brandon-grotesque-light;
+      font-size: 20px;
+      color: #231F20;
+      &:last-child {
+        margin-right: 0;
+        margin-left: 1%;
+      }
+      .accordion-img-container {
+        margin-bottom: 0;
+        float: left;
+        text-align: center;
+        width: 100%;
+        .image-container {
+          float: left;
+          width: 100%;
+          height: 12VW;
+          .accordion-img {
+            height: 90%;
+            margin: 1.5% 0;
+          }
+        }
+        .accordion {
+          margin: 0;
+          background: #efeeeb;
+          line-height: 3VW;
+          text-align: center;
+          cursor: pointer;
+          float: left;
+          width: 100%;
+          .accordion-icon {
+            font-size: 1.5VW;
+          }
+        }
+      }
+      .accordion-item {
+        background-color: white;
+        p {
+          margin: 0;
+          text-align: left;
+          text-indent: 6%;
+          border-bottom: 2px solid #d3d3d3;
+          line-height: 39px;
+          font-family: brandon-grotesque-light;
+        }
+      }
+    }
+  }
+}
+.who-page {// This css is used for the Who We Are Page
+  .title-container{
+    float: left;
+    position: relative;
+    margin: 5VW 0 2VW 5.5%;
+    font-family: baskerville;
+    color:#231F20;
+    width: auto;
+    .title {
+      font-size: 3.4VW;
+    }
+    .desc {
+      font-size: 1.2VW;
+    }
+  }
+  .story {// This is used for the container of the Story Video Section
+    float: left;
+    width: 100%;
+    height: 30VW;
+    margin: 0 0 3VW;
+    p {
+      float: left;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 24VW;
+      font-size: 30px;
+    }
+  }
+  .manifesto {// This is used for the Manifesto Section
+    float: left;
+    width: 90%;
+    margin: 0 5% 80px;
+    color: #231F20;
+    .text {
+      font-size: 26px;
+      margin: 0 0 30px;
+      font-family: brandon-grotesque-light;
+      font-size: 20px;
+    }
+    .paragraph {
+      font-size: 20px;
+      line-height: 31px;
+      font-family: brandon-grotesque-light;
+    }
+    .left {
+      width: 45%;
+      float: left;
+    }
+    .right {
+      width: 48%;
+      float: right;
+    }
+  }
+  .system {// This is used for the Ketra System section of the Who We Are Page
+    float: left;
+    width: 100%;
+    margin: 40px 0;
+    .system-container {
+      float: left;
+      width: 100%;
+      height: 430px;
+      margin: 30px 0 0;
+      .column {// This is used for each column of the Ketra System Section
+        float: left;
+        width: 25%;
+        height: 100%;
+        .column-upper {
+          float: left;
+          width: 100%;
+          height: 80%;
+          .title {
+            font-size: 13px;
+            margin-top: 200px;
+          }
+        }
+        .column-lower {
+          float: left;
+          width: 100%;
+          height: 20%;
+          background-color: #6d6d6d;
+        }
+      }
+      .side {
+        width: 24.6%;
+        border-right: 1px solid;
+      }
+    }
+  }
+}
+// @media screen and (max-width: 960px) {
+//   .body {
+//     margin-top: 6VW;
+//     .background-image {
+//       float: left;
+//       width: 100%;
+//     }
+//   }
+// }

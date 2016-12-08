@@ -1,0 +1,21 @@
+.header
+  / .title.arial= link_to "KETRA", root_path
+  %a{href: root_path}
+    %img.ketra-logo{src:"/assets/ketra-logo.png"}
+  .menu-container
+    .menu-button
+      %img.img-1-1{src:"/assets/menu-black-circular-button.png"}
+    .menu-hover
+      .menu-hover-container
+        %img.x-button{src: "/assets/cross-out-mark.png"}
+        .page-container
+          .page= link_to "Home",      root_path
+          .page= link_to "Products",  products_path
+          .page= link_to "Projects", projects_path
+          .page= link_to "Resources", resources_path
+          .page= link_to "Who We Are", who_we_are_path
+          .sub-page= link_to "The Ketra System", who_we_are_path
+          .page= link_to "Contact", contact_path
+  .search
+    %img{src: "/assets/search.png"}
+    %input{placeholder: "Search"}

@@ -1,0 +1,106 @@
+= content_for :head do
+  = javascript_include_tag "items"
+.body.item
+  .row
+    .title-container
+      .title.arial.medium S30
+  .row
+    .main-product.light-grey
+      .product-image
+        %img{src: "/assets/products/lamp-3.png"}
+      .product-text
+        .text Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+  .row.margin-bottom
+    .product-specs.arial
+      .spec-container.size
+        .title.arial Size
+        .specs.first 00”
+        .specs 00”
+      .spec-container.output
+        .title.arial Lumen Outputs
+        .specs.first 000
+        .specs 000
+      .spec-container.color
+        .title.arial Colors
+        .specs.first Lorem
+        .specs Lorem
+      .spec-container.type
+        .title.arial Base Types
+        %br
+        .specs.first Lorem Ipsum
+        .specs Dolor sit amet
+      .spec-container.last
+        .title.arial &nbsp;
+        %a.download-button
+          .spec-sheet 
+            .button Spec Sheet
+            .download-container
+              %img{src: "/assets/download-image.png"}
+  .row
+    .item-image-slideshow
+      .item-images.light-grey
+        %img.image_1{src: "/assets/products/lamp-3.png"}
+        %img.image_2.invisible{src: "/assets/products/fixture-1.png"}
+        %img.image_3.invisible{src: "/assets/products/fixture-2.png"}
+        %img.image_4.invisible{src: "/assets/products/lamp-1.png"}
+        %img.image_5.invisible{src: "/assets/products/lamp-2.png"}
+      .sliders
+        .image-index.index-1.picked{value: "1"}
+        .image-index.index-2{value: "2"}
+        .image-index.index-3{value: "3"}
+        .image-index.index-4{value: "4"}
+        .image-index.index-5{value: "5"}
+  .row.downloads.margin-bottom
+    .downloads-container.arial
+      .title-container
+        .title Downloads
+      .download-row
+        .download-item
+          .text Product Installation Instructions
+          .image
+            %img{src: "/assets/download-image.png"}
+        .download-item
+          .text Product All Product Images
+          .image
+            %img{src: "/assets/download-image.png"}
+      .download-row
+        .download-item
+          .text Product Product Brochure
+          .image
+            %img{src: "/assets/download-image.png"}
+        .download-item
+          .text Product Spec Sheet
+          .image
+            %img{src: "/assets/download-image.png"}
+      .download-row
+        .download-item
+          .text Product IES Files
+          .image
+            %img{src: "/assets/download-image.png"}
+        .download-item
+          .text Product Wiring
+          .image
+            %img{src: "/assets/download-image.png"}
+      .download-row
+        .download-item.last
+          .text Product App Notes
+          .image
+            %img{src: "/assets/download-image.png"}
+        .download-item.last
+          .text Product One Line Diagrams
+          .image
+            %img{src: "/assets/download-image.png"}
+      .accessories Accessories
+      .accessory-container
+  .row.related.light-grey
+    .title-container
+      .title Related Products
+    .related-products-container
+      / .related-product
+      .related-product.middle
+        %img{src: "/assets/products/fixture-1.png"}
+      / .related-product
+  .row.margin-bottom.text-align-center
+    %a{href: products_path}
+      .button.main-button
+        %p.arial VIEW ALL PRODUCTS
