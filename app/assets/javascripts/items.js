@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  itemSetWidth();
+  // itemSetWidth();
   half_body_width = $(".body").width() / 2;
 
   function itemSetWidth() { //This function is used for the Product Specification Section so that the width of each spec will be enough for the whole width of the browser.
