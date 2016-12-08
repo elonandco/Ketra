@@ -519,6 +519,8 @@ a:hover {
     margin: 50px 5.5% 0;
     .spec-container {// This is for the container of each specification
       float: left;
+      width: 17%;
+      margin-right: 3%;
       .title {
         float: left;
         font-size: 2VW;
@@ -526,24 +528,25 @@ a:hover {
         // border-bottom: 1px solid;
       }
       .specs {
-        margin-top: 10px;
+        margin-top: 0.5VW;
         float: left;
+        font-size: 1.1VW;
       }
       .first {
-        margin-top: 30px;
+        margin-top: 2VW;
       }
 
       .spec-sheet {// This is used for the download link for the Product Specification Sheet
         float: left;
-        margin-top: 30px;
+        margin-top: 2VW;
         .button {
-          font-size: 23px;
+          font-size: 1.5VW;
           float: left;
         }
         .download-container {
           float: left;
-          width: 22px;
-          margin-left: 30px;
+          width: 1.5VW;
+          margin-left: 2VW;
           // border-bottom: 1px solid;
           img {
             width: 100%;
@@ -621,7 +624,7 @@ a:hover {
           border-top: 1px solid;
           .text{
             float: left;
-            font-size: 24px;
+            font-size: 1.5VW;
             margin-left: 10%;
           }
           .image {
