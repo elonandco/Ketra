@@ -371,18 +371,18 @@ a:hover {
     border-top: 3px solid #d3d3d3;
     border-right: 1px solid;
     .title {
-      margin-top: 30px;
+      margin-top: 1.5VW;
       float: left;
       width: 50%;
       font-size: 17px;
       letter-spacing: 3px;
       p {// This is used for each page name on the Pages Section
         float: left;
-        margin: 0 0 0 50px;
+        margin: 0 0 0 4VW;
         cursor: pointer;
         a {
           font-family: azosans_light;
-          font-size: 16px;
+          font-size: 1VW;
         }
       }
     }
@@ -394,21 +394,21 @@ a:hover {
     .contact-container {
       float: left;
       .text {
-        margin: 5px 0 0 52px;
-        font-size: 14px;
+        margin: 0.5VW 0 0 3.5VW;
+        font-size: 1VW;
         font-family: azosans_light;
       }
       .title {
-        margin-top: 28px;
+        margin-top: 1.5VW;
         font-family: azosans_medium;
-        font-size: 14px;
+        font-size: 1VW;
       }
     }
     .social { //This is used for the Social Buttons section of the Footer
       padding: 0px;
       margin: 0px;
       img {
-        margin: 27px 15px 0 0;
+        margin: 1.5VW 1VW 0 0;
         float: left;
         width: 10%;
         cursor: pointer;
@@ -525,12 +525,14 @@ a:hover {
         float: left;
         font-size: 2VW;
         padding: 10px 60px 10px 0;
+        width: 100%;
         // border-bottom: 1px solid;
       }
       .specs {
         margin-top: 0.5VW;
         float: left;
         font-size: 1.1VW;
+        width: 100%;
       }
       .first {
         margin-top: 2VW;
@@ -558,6 +560,7 @@ a:hover {
       }
     }
     .last {
+      margin: 0;
       .title {
         padding-right: 0px;
       }
